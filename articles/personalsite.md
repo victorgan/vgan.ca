@@ -1,11 +1,14 @@
 ---
 title: vgan.ca
-date: October 22, 2011
-description: A static, simple site
+date: June 28, 2012
+description: A personal made with Hakyll
 ---
 
-Motivation
-----------
+
+
+Technologies
+------------
+- Hakyll
 Dab into Haskell
 Static sites as I do not require any dynamic content.
 
