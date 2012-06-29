@@ -1,0 +1,20 @@
+body {
+  color: #222;
+  background: #fff;
+  }
+/* Top Header ============================================================ */
+header a {
+  color: black;
+  }
+nav a {
+  color: #666;
+  }
+hr {
+  background-color: #f3f3f3;
+}
+.articleitem p {
+  color: #666;
+}
+
+/* Body Text ============================================================ */
+h1,h2,h3,h4,h5,h6 { color: #111; }

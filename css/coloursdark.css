@@ -1,0 +1,21 @@
+body {
+  color: #fff;
+  background: #222;
+  /* line-height:1.7; */
+  }
+/* Top Header ============================================================ */
+header a {
+  color: white;
+  }
+nav a {
+  color: #666;
+  }
+hr {
+  background-color: #333;
+}
+.articleitem p {
+  color: #666;
+}
+
+/* Body Text ============================================================ */
+h1,h2,h3,h4,h5,h6 { color: #fff; }
