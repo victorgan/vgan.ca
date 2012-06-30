@@ -67,6 +67,7 @@ ul .articleitem:hover {
   padding-top: 14px;
   border-top: 1px solid #f7f7f7;
   border-bottom: 1px solid #f7f7f7;
+  text-decoration: none;
 }
 .articleitem h3 {
   margin-bottom:0em;
