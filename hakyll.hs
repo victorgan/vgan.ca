@@ -14,8 +14,8 @@ main = hakyll $ do
     -- Read templates
     match "templates/*" $ compile templateCompiler
 
-    -- Copy images
-    match "images/**" $ do
+    -- Copy assets
+    match "assets/**" $ do
         route idRoute
         compile copyFileCompiler
 
@@ -88,7 +88,6 @@ main = hakyll $ do
         route   $ setExtension "html"
         compile $ pageCompiler
             >>> applyTemplateCompiler "templates/index.html"
-            >>> applyTemplateCompiler "templates/default.html"
             >>> relativizeUrlsCompiler
 
     -- Render RSS feed

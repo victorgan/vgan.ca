@@ -1,15 +1,16 @@
 /* Containers ============================================================== */
 /* A container should group all your columns. */
 .container {
-    max-width: 600px;
-    margin: 1em auto 0;
+    max-width: 40em;
+    margin: 24px auto 0;
+    /* background-color:orange; */
     }
 .containerlarge {
     max-width: 975px;
-    margin: 1em auto 0;
+    margin: 24px auto 0;
     }
 .topbar {
-    max-width: 600px;
+    max-width: 40em;
     margin: 0 auto;
 }
 .clearfix:after {
@@ -19,16 +20,41 @@
     clear: both;
     visibility: hidden;
     }
+
+/* Index Page ============================================================== */
+body.index {
+  /* background: no-repeat #222 url('../photos/VGan-110916-02328--Edit-2.jpg'); */
+  background-color: #000; 
+  background-repeat: no-repeat;
+  background-position: center top, center top;
+  height: 100%;
+  /* Webkit */
+  }
+
+.title {
+    /* background: rgba(0,0,0,0.5);  */
+    /* padding: 24px 0; */
+    position: absolute;
+    top: 50%;
+    font-size: 3em;
+    margin-top 70px;
+    padding: 10px 0; 
+    width: 100%;
+    text-align:center;
+    text-shadow: 0px 2px 2px black;
+}
 /* Top Bar Alignment ======================================================= */
 header {
   float: left;
-  padding-top:20px;
+  padding-top:23px;
   /* background-color: green; */
 }
 header a {
+  /* background-color: red; */
   text-decoration: none;
   font-style: italic;
-  font-size: 1em;
+  font-size: 18px;
+  line-height: 24px;
   font-family: 'Sorts Mill Goudy', serif;
   }
 header a:focus,
@@ -36,18 +62,21 @@ header a:hover     { text-decoration: none; }
 nav {
   float: right;
   text-align: right;
-  padding-top:20px;
+  padding-top:23px;
   /* background-color: green; */
 }
 nav a {
   font-family: sans-serif;
   text-decoration: none;
-  font-size:0.75em;
-  margin-top: 1em;
-  margin-left: 2px;
+  font-size: 11px;
+  line-height: 24px;
+  margin-left: 4px;
+  /* margin-top: 1em; */
 }
 nav a:focus,
-nav a:hover     { text-decoration: none; color: #0bf; }
+nav a:hover { 
+  text-decoration: none; color: #0bf; 
+  }
 
 /* Article Item ============================================================ */
 .articlelist {
@@ -58,15 +87,11 @@ ul .articleitem {
   display: inline-block;
   list-style-type: none;
   /* text-align: center; */
-  width: 600px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  width: 100%;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 ul .articleitem:hover {
-  padding-bottom: 14px;
-  padding-top: 14px;
-  border-top: 1px solid #f7f7f7;
-  border-bottom: 1px solid #f7f7f7;
   text-decoration: none;
 }
 .articleitem h3 {
@@ -81,3 +106,30 @@ ul .articleitem:hover {
 }
 
 /* Article Item ============================================================ */
+img.photo{
+    /* margin-bottom: 50px; */
+    outline: 1px solid rgb(51,51,51);
+    outline: 1px solid rgba(255,255,255,0.2);
+    outline-offset: -2px;
+    border: 1px solid black;
+}
+
+figure { 
+    display: block; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+figcaption { 
+    position: absolute; 
+    background: rgba(0,0,0,0.5); 
+    /* padding: 24px 0; */
+    color: white; 
+    padding: 10px 20px; 
+    bottom: 40px;
+    /* left: auto; */
+    text-shadow: 0px 4px 10px black;
+    width: 100%;
+    text-align:center;
+}
+

@@ -1,188 +1,37 @@
-<h1>$title$</h1>
-<p>templates/index.html</p>
-<p class="deemphasis">Posted on $date$</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Victor Gan - Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content>
+    <meta name="author" content>
 
-$body$
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="./css/typography.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="./css/layout.css" type="text/css" media="screen, projection">
+    <!-- <link rel="stylesheet" href="./css/colourslight.css" type="text/css" media="screen, projection"> -->
+    <link rel="stylesheet" href="css/coloursdark.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print">
+    <link href="http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic" rel="stylesheet" type="text/css">
+  </head>
 
-        <h1>Test.</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor
-        diam, semper sed accumsan quis, imperdiet a sem. Vestibulum lacus augue,
-        tristique id luctus ut, eleifend non eros. Aliquam erat volutpat. Donec
-        non iaculis tellus. Donec adipiscing dictum egestas. Donec mattis
-        lacinia mollis. Aliquam volutpat odio vel tortor suscipit in rutrum nisl
-        mattis. In hendrerit odio id velit mattis non gravida nunc hendrerit.
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Cras molestie, odio non ultricies luctus, purus
-        velit lacinia tortor, eu facilisis nunc risus in dolor. Sed nisl metus,
-        ornare sit amet adipiscing varius, porta ut nunc. Duis iaculis
-        sollicitudin lectus, vitae tincidunt dolor gravida vulputate. Morbi
-        vestibulum ligula erat. Duis ultrices lorem in turpis euismod ornare.
-        Curabitur consequat ante non metus blandit sit amet tempor diam
-        fringilla. Morbi non turpis turpis.
-        </p>
+  <body style="background-image:url(photos/VGan-111028-03063-.jpg), url($bgimage$)"class="index" >
 
-        <p>
-          <strong>&lt;strong&gt;</strong><br>
-          <del>&lt;del&gt; deleted</del><br>
-          <dfn>&lt;dfn&gt; dfn</dfn><br>
-          <em>&lt;em&gt; emphasis</em>
-        </p>
-        <p>
-          <a>&lt;a&gt; anchor</a><br>
-          <a href="#">&lt;a&gt; a + href</a>
-        </p>
-        <p>
-          <abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr><br>
-          <acronym title="extended acronym text should show when mouse over">&lt;acronym&gt; acronym - extended text when mouseover.</acronym>
-        </p>
-        <address>
-          &lt;address&gt;<br>
-          Donald Duck<br>
-          Box 555<br>
-          Disneyland
-        </address>
-        <blockquote>
-          <p>This is a BLOCKQUOTE Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </blockquote>
 
-        <table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
-          <caption><em>A standard test table with a caption, tr, td elements</em></caption>
-          <tr>
-            <th class="span-4">Table Header One</th>
-            <th class="span-4 last">Table Header Two</th>
-          </tr>
-          <tr>
-            <td>TD One</td>
-            <td>TD Two</td>
-          </tr>
-          <tr>
-            <td colspan="2">TD colspan 2</td>
-          </tr>
-        </table>
+    <div class="topbar clearfix"> 
+        <header>
+            <a href="./index.html" class="homelink">Victor Gan</a>
+        </header>
+        <nav>
+            <a href="./articles.html">articles</a>
+            <a href="./projects.html">projects</a>
+            <a href="./photography.html">photography</a>
+            <a href="./about.html">about</a>
+        </nav>
+    </div> <!-- topbar -->
 
-        <table summary="This is the summary text for this table."  border="0" cellspacing="0" cellpadding="0">
-          <caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
-          <thead>
-            <tr>
-              <th class="span-4">Table Header One</th>
-              <th class="span-4 last">Table Header Two</th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <td colspan="2">tfoot footer</td>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <td>TD One</td>
-              <td>TD Two</td>
-            </tr>
-            <tr>
-              <td>TD One</td>
-              <td>TD Two</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>TD One</td>
-              <td>TD Two</td>
-            </tr>
-            <tr>
-              <td>TD One</td>
-              <td>TD Two</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p>A line (hr element) follows this:</p>
-      <hr>
-        <h1>H1: Lorem ipsum dolor sit amet</h1>
-        <h2>H2: Lorem ipsum dolor sit amet, consectetur elit</h2>
-        <h3>H3: Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-        <h4>H4: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipis</h4>
-        <h5>H5: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</h5>
-        <h6>H6: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</h6>
-        <dl>
-          <dt>definition list dt</dt>
-          <dd>definition list dd</dd>
-          <dt>definition list dt</dt>
-          <dd>definition list dd</dd>
-          <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
-          <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
-        </dl>
-<pre>&lt;pre&gt;
-pre  space1
-pre  space1
-pre    space2
-pre    space2
-pre tab
-pre tab</pre>
-        <dl>
-          <dt>definition list dt</dt>
-          <dd>definition list dd</dd>
-          <dt>definition list dt</dt>
-          <dd>definition list dd</dd>
-          <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
-          <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
-        </dl>
-        <ol>
-          <li>Ordered list</li>
-          <li>Here's a nested unordered list
-          <ul>
-            <li>Nested Unordered list</li>
-            <li>Nested ordered list
-            <ol>
-              <li>The first</li>
-              <li>And the second</li>
-            </ol>
-            </li>
-          </ul>
-          </li>
-          <li>Ordered List item</li>
-          <li>Nested Ordered list
-          <ol>
-            <li>Some point</li>
-            <li>Nested Unordered list
-            <ul>
-              <li>The first</li>
-              <li>And the second</li>
-            </ul>
-            </li>
-          </ol>
-          </li>
-        </ol>
-        <ul>
-          <li>Unordered list test</li>
-          <li>Another list element. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-          <li>Yet another element in the list</li>
-          <li>Some long text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-        </ul>
-        <ol>
-          <li>Ordered list test</li>
-          <li>Another list element</li>
-          <li>Yet another element in the list</li>
-        </ol>
-
-        <code>&lt;code&gt;
-          Not indented
-          indent1
-          indent1
-          indent2
-          indent3</code>
-
-        <tt>&lt;tt&gt;
-          This tt text should be monospaced
-          and
-          wrap as if
-          one line of text
-          even though the code has newlines, spaces, and tabs.
-          It should be the same size as &lt;p&gt; text.
-        </tt>
+    <h1 class="title">$titleline$</h1>
 
   </body>
 </html>

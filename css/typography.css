@@ -1,25 +1,29 @@
- --------------------------------------------------------------
 
-   typography.css
-   * Sets up some sensible default typography.
-
--------------------------------------------------------------- */
 
 /* Default font settings.
    The font-size percentage is of 16px. (0.75 * 16px = 12px) */
 html { font-size:100.01%; }
 body {
   text-rendering: optimizeLegibility;
-  font-size: 125%; 
-  /* font-size: 100%;  */
   /* font-family: "Palatino Linotype","Book Antiqua", Palatino, Freeserif, serif; */
-  font-family: "Palatino Linotype","Book Antiqua", Palatino, Freeserif, serif;
+  font-size: 14px; 
+  line-height: 24px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .deemphasis {
   font-family: sans-serif;
   color: #666;
-  font-size: 0.75em;
+  font-size: 11px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  /* background-color:blue; */
+}
+
+hr {
+  height: 1px;
+  border:none;
+  margin-bottom: 19px;
 }
 
 /* Headings -------------------------------------------------------------- */
@@ -27,6 +31,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal; 
     font-family: 'Sorts Mill Goudy', serif;
     font-style: italic;
+    margin-bottom: 0;
 }
 
 /* h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; } */
@@ -35,12 +40,22 @@ h1,h2,h3,h4,h5,h6 {
 /* h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; } */
 /* h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; } */
 /* h6 { font-size: 1em; font-weight: bold; } */
-h1 { font-size: 3em; line-height: 1; margin-bottom: 0; }
-h2 { font-size: 2em; margin-bottom: 0; }
-h3 { font-size: 1.2em; line-height: 1; margin-bottom: 0; }
-h4 { font-size: 0.5em; line-height: 1; margin-bottom: 0; }
-h5 { font-size: 0.5em; font-weight: bold; margin-bottom: 0; }
-h6 { font-size: 0.5em; font-weight: bold; }
+h1 { font-size: 48px; 
+     line-height:72px;
+    /* background-color:green; */
+    }
+h2 { font-size: 36px;
+     line-height:48px;
+    /* background-color:red; */
+    }
+h3 { font-size: 24px;
+     line-height:24px;
+    /* background-color:yellow; */
+    }
+h4,h5,h6 { font-size: 28px;
+     line-height:48px;
+    /* background-color:yellow; */
+    }
 
 h1 img, h2 img, h3 img,
 h4 img, h5 img, h6 img {
@@ -49,32 +64,36 @@ h4 img, h5 img, h6 img {
 
 /* Text elements ----------------------------------------------------------- */
 
-p           { margin: 0 0 1.5em; }
+p           { margin: 0 0 24px; }
 /*
   These can be used to pull an image at the start of a paragraph, so
   that the text flows around it (usage: <p><img class="left">Text</p>)
  */
 .left       { float: left !important; }
-p .left     { margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p .left     { margin: 24px 24px 24px 0; padding: 0; }
 .right      { float: right !important; }
-p .right    { margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+p .right    { margin: 24px 0 24px 24px; padding: 0; }
 
 a:focus,
 a:hover     { text-decoration: underline; color: #0bf; }
 a           { text-decoration: none; color: #09c;}
 
-blockquote  { color: #666; margin: 1.5em; font-style: italic; }
+blockquote  { color: #666; margin: 24px; font-style: italic; }
 strong,dfn  { font-weight: bold; }
 em,dfn      { font-style: italic; }
 sup, sub    { line-height: 0; }
 
 abbr,
 acronym     { border-bottom: 1px dotted #666; }
-address     { margin: 0 0 1.5em; font-style: italic; }
-del         { color:#666; }
+address     { margin: 0 0 24px; font-style: italic; }
+del         { color: #666; }
 
-pre         { margin: 1.5em 0; white-space: pre; }
-pre,code,tt { font: 0.75em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+pre         { margin: 0 0 24px 0; }
+code,tt     { font: 11px 'andale mono', 'lucida console', monospace; 
+              margin: 0;
+              /* background-color: pink; */
+              }
+
 
 
 /* Lists
@@ -82,15 +101,14 @@ pre,code,tt { font: 0.75em 'andale mono', 'lucida console', monospace; line-heig
 
 li ul,
 li ol  { margin: 0; }
-ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
+ul, ol { margin: 0 24px 24px 0; padding-left: 24px; padding-top:0; padding-bottom:0;}
 
 ul     { list-style-type: disc; }
 ol     { list-style-type: decimal; }
 
-dl     { margin: 0 0 1.5em 0; }
+dl     { margin: 0 0 24px 0; }
 dl dt  { font-weight: bold; }
-dd     { margin-left: 1.5em;}
-
+dd     { margin-left: 24px;}
 
 /* Tables
 -------------------------------------------------------------- */
@@ -100,10 +118,10 @@ dd     { margin-left: 1.5em;}
   on table cells has to be 27px, instead of the standard 18px or 36px
   of other elements.
  */
-table         { margin-bottom: 1.4em; width:100%; }
+table         { margin-bottom: 24px; width:100%; }
 th            { font-weight: bold; }
 thead th      { background: #c3d9ff; color: #222; }
-th,td,caption { padding: 4px 10px 4px 5px; }
+th,td,caption { padding: 5px 10px 5px 5px; }
 /*
   You can zebra-stripe your tables in outdated browsers by adding
   the class "even" to every other table row.
