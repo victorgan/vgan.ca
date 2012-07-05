@@ -23,22 +23,30 @@
 
 /* Index Page ============================================================== */
 body.index {
-  /* background: no-repeat #222 url('../photos/VGan-110916-02328--Edit-2.jpg'); */
   background-color: #000; 
-  background-repeat: no-repeat;
-  background-position: center top, center top;
   height: 100%;
   /* Webkit */
+  }
+img.index {
+    outline: 1px solid rgb(51,51,51);
+    outline: 1px solid rgba(255,255,255,0.2);
+    outline-offset: -2px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left:-487px;
+    z-index: -1;
   }
 
 .title {
     /* background: rgba(0,0,0,0.5);  */
     /* padding: 24px 0; */
     position: absolute;
-    top: 50%;
+    top: 300px;
     font-size: 3em;
-    margin-top 70px;
-    padding: 10px 0; 
     width: 100%;
     text-align:center;
     text-shadow: 0px 2px 2px black;
@@ -105,7 +113,7 @@ ul .articleitem:hover {
   color: #0bf;
 }
 
-/* Article Item ============================================================ */
+/* Front Page ============================================================== */
 img.photo{
     /* margin-bottom: 50px; */
     outline: 1px solid rgb(51,51,51);
