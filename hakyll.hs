@@ -93,7 +93,7 @@ main = hakyll $ do
     -- Render RSS feed
     match  "rss.xml" $ route idRoute
     create "rss.xml" $
-        requireAll_ "projects/*" >>> renderRss feedConfiguration
+        requireAll_ "articles/*" >>> renderRss feedConfiguration
 
 
 
@@ -104,13 +104,6 @@ addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "posts" $
     arr (reverse . sortByBaseName)
         >>> require "templates/articlelistitem.html" (\p t -> map (applyTemplate t) p)
-        >>> arr mconcat
-        >>> arr pageBody
-
-addImageList :: Compiler (Page String, [Page String]) (Page String)
-addImageList = setFieldA "image" $
-    arr (reverse . sortByBaseName)
-        >>> require "templates/imagelistitem.html" (\p t -> map (applyTemplate t) p)
         >>> arr mconcat
         >>> arr pageBody
 
