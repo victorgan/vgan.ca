@@ -4,8 +4,6 @@ date: June 29, 2012
 description: Designing my personal site
 ---
 
-
-
 Lagom är bäst
 -------------
 The Swedes have a word they like using: Lagom. It has no direct translation, but
@@ -74,9 +72,9 @@ Introducing a colour into the site's foundation makes it hard to match so I
 attempted to use as little as possible, except for the links which are a cool
 shade of cerulean turquoise.
 
-Effectiveness
+...
 -------------
-The cynicst 
+(unfinished)
 
 
 
