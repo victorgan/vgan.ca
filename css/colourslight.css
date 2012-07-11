@@ -1,12 +1,8 @@
 body {
   color: #222;
-  background: #fff;
-  /* background-image:url('24bg.gif'); */
+  background: #fff url('../assets/bglight.png');
   }
 /* Top Header ============================================================ */
-header a {
-  color: black;
-  }
 nav a {
   color: #666;
   }

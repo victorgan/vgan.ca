@@ -1,11 +1,8 @@
 body {
   color: #fff;
-  background: #222;
+  background: #222 url('../assets/bgdark.png');
   }
 /* Top Header ============================================================ */
-header a {
-  color: white;
-  }
 nav a {
   color: #666;
   }

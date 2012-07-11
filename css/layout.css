@@ -2,7 +2,7 @@
 /* A container should group all your columns. */
 .container {
     max-width: 40em;
-    margin: 24px auto 0;
+    margin: 0px auto 0;
     /* background-color:orange; */
     }
 .containerlarge {
@@ -22,55 +22,93 @@
     }
 
 /* Index Page ============================================================== */
-body.index {
-  background-color: #000; 
-  height: 100%;
-  /* Webkit */
-  }
 img.index {
-    outline: 1px solid rgb(51,51,51);
-    outline: 1px solid rgba(255,255,255,0.2);
-    outline-offset: -2px;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 50%;
     margin-left:-487px;
     z-index: -1;
+
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 
+                0px 0px 0px 1px rgba(255,255,255,0.3),
+                0px 0px 0px 2px rgba(0,0,0,0.5),
+                0px 2px 3px 3px rgba(0,0,0,0.5),
+                0px 305px 10px -300px rgba(0,0,0,0.5);
   }
 
 .title {
-    /* background: rgba(0,0,0,0.5);  */
+    background-color: rgba(0,0,0,0.5); 
     /* padding: 24px 0; */
     position: absolute;
     top: 300px;
     font-size: 3em;
-    width: 100%;
+    width: 977px;
+    left: 50%;
+    margin-left:-488px;
     text-align:center;
     text-shadow: 0px 2px 2px black;
 }
 /* Top Bar Alignment ======================================================= */
 header {
   float: left;
-  padding-top:23px;
-  /* background-color: green; */
+  padding-top:13px;
+  padding-bottom: 10px;
+  background-color: #1C1C1C;
+background-image: -ms-radial-gradient(center top, circle farthest-corner, #4A4A4A 0%, #1C1C1C 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center top, circle farthest-corner, #4A4A4A 0%, #1C1C1C 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center top, circle farthest-corner, #4A4A4A 0%, #1C1C1C 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center top, 0, center top, 496, color-stop(0, #4A4A4A), color-stop(1, #1C1C1C));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center top, circle farthest-corner, #4A4A4A 0%, #1C1C1C 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle farthest-corner at center top, #4A4A4A 0%, #1C1C1C 100%);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom: 1px solid #555;
+  border-right: 1px solid #555;
+  border-left: 1px solid #555;
+  /* box-shadow: inset 0px 0px 1px rgba(255,255,255, 0.1); */
+  box-shadow: 0px 0px 0px 1px #111, 
+              0px 3px 2px 0px rgba(0,0,0,0.2),
+              0px 0px 40px 0px rgba(255,255,255,0.1);
 }
 header a {
+  padding-top:13px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
   /* background-color: red; */
   text-decoration: none;
-  font-style: italic;
-  font-size: 18px;
   line-height: 24px;
+  font-size: 18px;
+  font-style: italic;
   font-family: 'Sorts Mill Goudy', serif;
+  color: #0bf; 
+  /* text-shadow: 0px 1px 1px #00506B; */
+  text-transform:lowercase;
+  text-shadow: -1px -1px 0px #111;
   }
 header a:focus,
 header a:hover     { text-decoration: none; }
+header a:active     { 
+  color: #B0EAFF; 
+}
 nav {
-  float: right;
+  float: left;
   text-align: right;
-  padding-top:23px;
+  padding-top:13px;
+  padding-left: 10px;
+  padding-bottom:13px;
   /* background-color: green; */
 }
 nav a {
@@ -113,14 +151,15 @@ ul .articleitem:hover {
   color: #0bf;
 }
 
-/* Front Page ============================================================== */
+/* Photo Page ============================================================== */
 img.photo{
-    /* margin-bottom: 50px; */
-    outline: 1px solid rgb(51,51,51);
-    outline: 1px solid rgba(255,255,255,0.2);
-    outline-offset: -2px;
-    border: 1px solid black;
-}
+    border-radius: 2px;
+    box-shadow: 
+                0px 0px 0px 1px rgba(255,255,255,0.3),
+                0px 0px 0px 2px rgba(0,0,0,0.5),
+                0px 2px 3px 3px rgba(0,0,0,0.5),
+                0px 305px 10px -300px rgba(0,0,0,0.5);
+    }
 
 figure { 
     display: block; 
@@ -140,4 +179,3 @@ figcaption {
     width: 100%;
     text-align:center;
 }
-
