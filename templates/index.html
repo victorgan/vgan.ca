@@ -32,7 +32,17 @@
     </div> <!-- topbar -->
 
     <img class="index" src="$bgimage$" />
-    <h1 class="title">$titleline$</h1>
+    <h1 class="title" title="Oh, the places you'll go!"></h1>
 
+    <script src="./javascripts/jquery-1.7.2.js"></script>
+    <script src="./javascripts/typewriter.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('h1.title').each(function() {
+                showCaption($(this));
+        });
+    });
+
+    </script>
   </body>
 </html>
