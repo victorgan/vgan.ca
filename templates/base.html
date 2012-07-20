@@ -9,15 +9,17 @@
 
     <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="/css/typography.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/css/$colourscheme$.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="/css/layout.css" type="text/css" media="screen, projection">
-    <link rel="stylesheet" href="/css/colourslight.css" type="text/css" media="screen, projection">
-    <!-- <link rel="stylesheet" href="css/coloursdark.css" type="text/css" media="screen, projection"> -->
+    <link rel="stylesheet" href="/css/syntaxhighlight.css" type="text/css" media="screen">
     <link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
-    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400italic' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
 
   <body>
-
     <div class="topbar clearfix"> 
         <header>
             <a href="/index.html" class="homelink">Victor Gan</a>
@@ -29,9 +31,6 @@
             <a href="/about.html">about</a>
         </nav>
     </div> <!-- topbar -->
-    <div class="container">
-    $body$
-    </div> <!-- /container -->
-
+  $body$
   </body>
 </html>

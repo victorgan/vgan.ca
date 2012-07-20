@@ -50,6 +50,11 @@ img.index {
     text-align:center;
     text-shadow: 0px 2px 2px black;
 }
+
+.indexcontainer {
+    position: relative;
+    top: 603px;
+}
 /* Top Bar Alignment ======================================================= */
 header {
   float: left;
@@ -125,7 +130,7 @@ nav a:hover {
   }
 
 /* Article Item ============================================================ */
-.articlelist {
+.nomarginpadding {
   padding: 0;
   margin: 0;
 }
@@ -140,9 +145,11 @@ ul .articleitem {
 ul .articleitem:hover {
   text-decoration: none;
 }
+.nounderline:hover {
+  text-decoration: none;
+}
 .articleitem h3 {
   margin-bottom:0em;
-  color: black;
 }
 .articleitem p {
   margin-bottom:0em;
@@ -150,9 +157,25 @@ ul .articleitem:hover {
 .articleitem h3:hover {
   color: #0bf;
 }
+.photoitem {
+    /* background-color: rgba(0,0,0,0.5);  */
+    width: 100%;
+    margin-left: 12px;
+    text-shadow: 0px 2px 3px black;
+}
+.photolistitem {
+    display: inline-block;
+    list-style-type: none;
+    /* text-align: center; */
+    width: 100%;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    padding-top:60px;
+    padding-bottom:12px;
+}
 
 /* Photo Page ============================================================== */
-img.photo{
+.photo{
     border-radius: 2px;
     box-shadow: 
                 0px 0px 0px 1px rgba(255,255,255,0.3),

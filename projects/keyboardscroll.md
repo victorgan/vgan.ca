@@ -22,8 +22,7 @@ Globe's The Big Picture](http://www.boston.com/bigpicture/).
 
 Download
 --------
-Uncompressed version: [jquery.keyboardScroll.js](../javascripts/jquery.keyboardScroll.js)  
-Compressed version: [jquery.keyboardScroll.min.js](../javascripts/jquery.keyboardScroll.min.js)  
+[jquery.keyboardScroll.js](../javascripts/jquery.keyboardScroll.js)  
 On Github: [https://github.com/victorgan/KeyboardScroll](https://github.com/victorgan/KeyboardScroll)
 
 Quick Start
@@ -35,14 +34,16 @@ Quick Start
 2. On each HTML page you wish to run KeyboardScroll, add the following to the head of
    the page. 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-        type="text/javascript"></script>
-        <script src="/path/to/jquery.keyboardScroll.min.js"></script>
-        <script type="text/javascript" charset="utf-8">
-          $(function() {
-                  $(".element").keyboardScroll();
-          });
-        </script>
+~~~{.javascript .numberLines}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+type="text/javascript"></script>
+<script src="/path/to/jquery.keyboardScroll.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+          $(".element").keyboardScroll();
+  });
+</script>
+~~~
 
 3. Ensure your path to the `jquery.keyboardScroll.min.js` file is correct by
    replacing `/path/to` with the appropriate path.
@@ -60,36 +61,44 @@ Explanation
 Let's go through the above code line by line. This plugin requires jQuery
 version 1.7.2. This is done by including this:
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-    type="text/javascript"></script>
+~~~{.javascript .numberLines}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+type="text/javascript"></script>
+~~~
 
 The script containing the keyboardScroll function is inlcuded like so:
 
-    <script src="/path/to/jquery.keyboardScroll.min.js"></script>
+~~~{.javascript .numberLines startFrom="3"}
+<script src="/path/to/jquery.keyboardScroll.min.js"></script>
+~~~
 
 And finally, the function in `jquery.keyboardScroll.min.js` is called:
 
-    <script type="text/javascript" charset="utf-8">
-      $(function() {
-              $(".element").keyboardScroll();
-      });
-    </script>
+~~~{.javascript .numberLines startFrom="4"}
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+          $(".element").keyboardScroll();
+  });
+</script>
+~~~
 
 Customizations
 --------------
 KeyboardScroll has three optional parameters that can be set. This is done like
 so:
 
-    <script type="text/javascript" charset="utf-8">
-      $(function() {
-              $("element").keyboardScroll(
-              {
-                downKeyCode     : 74,   // 'j'
-                upKeyCode       : 75,   // 'k'
-                scrollDuration  : 100   // in milliseconds
-              });
-      });
-    </script>
+~~~{.javascript}
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+          $("element").keyboardScroll(
+          {
+            downKeyCode     : 74,   // 'j'
+            upKeyCode       : 75,   // 'k'
+            scrollDuration  : 100   // in milliseconds
+          });
+  });
+</script>
+~~~
 
 - `downKeyCode` specifies the key to press to scroll down an element. The default
   is j (key code 74)

@@ -129,12 +129,10 @@ th,td,caption { padding: 5px 10px 5px 5px; }
  */
 tbody tr:nth-child(even) td,
 tbody tr.even td  {
-  background: #e5ecf9;
   color: #222;
 }
 tbody tr:nth-child(odd) td,
 tbody tr.odd td  {
-  background: #fff;
   color: #222;
 }
 tfoot       { font-style: italic; }

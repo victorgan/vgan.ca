@@ -1,0 +1,42 @@
+ table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { 
+    /* width: auto; */
+    /* color: red;  */
+    position: relative;
+    left: -51px;
+    }
+td.lineNumbers { text-align: right; padding: 0 }
+td.sourceCode { padding-left: 5px; }
+td.lineNumbers pre {
+    width:30px; 
+    background-color: transparent;
+    box-shadow: none;
+    color: #999;
+    border-radius: 0px;
+    }
+pre {
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 40em;
+    border-radius: 4px;
+    box-shadow: 
+                0px 0px 0px 1px rgba(0,0,0,0.2),
+                0px 0px 0px 2px rgba(255,255,255,0.3),
+                inset 0px 2px 3px 0px rgba(0,0,0,0.9);
+}
+pre, code { color: #cccccc; 
+            background-color: #222; 
+            }
+code > span.kw { color: #f0dfaf; }
+code > span.dt { color: #dfdfbf; }
+code > span.dv { color: #dcdccc; }
+code > span.bn { color: #dca3a3; }
+code > span.fl { color: #c0bed1; }
+code > span.ch { color: #dca3a3; }
+code > span.st { color: #cc9393; }
+code > span.co { color: #7f9f7f; }
+code > span.ot { color: #efef8f; }
+code > span.al { color: #ffcfaf; }
+code > span.fu { color: #efef8f; }
+code > span.er { color: #c3bf9f; }

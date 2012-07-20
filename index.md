@@ -1,4 +1,7 @@
 --
-bgimage: photos/VGan-110916-02328--Edit-2.jpg
-titleline: Oh, the places you'll go
+title: O-('.'Q)
+bgimage: photos/VGan-120422-12193-.jpg
+titleline: &ldquo;It is my belief that veterinary GPs<br/>are better than human ones&rdquo;
+colourscheme: coloursdark
 --
+
